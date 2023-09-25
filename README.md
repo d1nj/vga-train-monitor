@@ -2,6 +2,9 @@
 
 # AEP-SS23
 
+## PetaLinux Train Appicaltion
+The source files of the User Application are located [here](https://github.com/d1nj/vga-train-monitor/tree/main/aep-peta-new/project-spec/meta-user/recipes-apps/bahnappcpp/files).
+
 ## Development Workflow
 
 1. `git clone git@git.tu-berlin.de:d.guertler/aep-ss23.git`
