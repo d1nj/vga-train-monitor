@@ -1,0 +1,9 @@
+[Unit]
+Description=bahnappcpp
+
+[Service]
+ExecStart=/bin/bash -c "while ! ping -c 1 8.8.8.8 &>/dev/null; do sleep 1; done && echo 'Network connection established. Starting bahnappcpp...' && /usr/bin/ps_cpp"
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target

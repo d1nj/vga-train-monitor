@@ -1,0 +1,16 @@
+fpga/vivado/*
+fpga/bd/**/hdl
+fpga/bd/**/hw_handoff
+fpga/bd/**/ip
+fpga/bd/**/ipshared
+fpga/bd/**/sim
+fpga/bd/**/synth
+fpga/bd/**/ui
+*.bxml
+*.xdc
+*.jou
+*.log
+*.bda
+.Xil
+*.str
+!fpga/constr/vga_constr.xdc

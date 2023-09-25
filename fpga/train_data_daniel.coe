@@ -1,0 +1,13 @@
+; COE File with example train data
+memory_initialization_radix=16;
+memory_initialization_vector=
+0053002b,
+00550020,
+00520061,
+00740068,
+00610075,
+00730020,
+00530070,
+0061006e,
+00640061,
+00750000;

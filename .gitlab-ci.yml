@@ -1,0 +1,16 @@
+build:
+  variables:
+    GIT_STRATEGY: clone
+  image: xilinx:2022.2
+  tags:
+    - xilinx
+  script:
+    - source /opt/Xilinx/Vivado/2022.2/settings64.sh && fpga/scripts/build_fpga.sh
+    - source /home/xilinx/petalinux/2022.2/settings.sh && cd linux && scripts/build_image.sh devopsexample 
+  artifacts:
+    paths:
+      - linux/**/images/linux/image.ub
+      - linux/**/images/linux/BOOT.BIN
+      - linux/**/images/linux/boot.scr
+      - fpga/vivado/**/impl_1/*.bit
+
